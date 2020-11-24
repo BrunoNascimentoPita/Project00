@@ -36,46 +36,14 @@
             width: 10px;
         }
 
-        #buttons a {
-            text-decoration: none;
-            color: black;
-            background-color: white;
-            border-radius: 20px 20px 20px 20px;
-            padding: 15px 135px 15px 135px;
-            position: relative;
-            top: 100px;
-            left: 65%;
-            font: bold 20px Arial;
-
-        }
-
-        #buttons a:hover {
-            background-color: black;
-            color: white;
-            border-radius: 100px;
-        }
-
-        #buttons1 a:hover {
-            background-color: black;
-            color: white;
-            border-radius: 100px;
-        }
-
-        #buttons1 a {
-            text-decoration: none;
-            color: black;
-            background-color: white;
-            border-radius: 20px 20px 20px 20px;
-            padding: 15px 107px 15px 107px;
-            position: relative;
-            top: 140px;
-            left: 65%;
-            font: bold 20px Arial;
-
-        }
+    
+li a{
+    color:white;
+}
+      
 
         a {
-            color: white;
+            color: black;
             text-decoration: none;
             list-style: none;
 
@@ -91,7 +59,7 @@
         }
 
         .menu a:hover {
-
+text-decoration: none;
             color: black;
             font-size: 18px;
         }
@@ -137,6 +105,23 @@
             font-size: 50px;
             width: 550px;
         }
+        .pequeno{
+           position: absolute;
+           left:60%;
+           top:150px;
+           margin: 100px;
+           width:200px;
+           
+       }
+       .pequeno1{
+           position: absolute;
+           left:60%;
+           top:100px;
+           margin: 100px;
+           width:200px;
+           
+       }
+            
 
         @media all and (min-width: 0px) and (max-width: 1000px) {
            
@@ -152,7 +137,13 @@
 
             }
 
-
+            .vetorial {
+                position: relative;
+                width: 500px;
+                height: 350px;
+                top: 300px;
+                left: 10%;
+            }
 
             .text {
                 position: relative;
@@ -164,42 +155,25 @@
                 max-width:100%;
             }
 
-            #buttons a {
-                text-decoration: none;
-                color: black;
-                background-color: white;
-                border-radius: 20px 20px 20px 20px;
-                padding: 15px 135px 15px 135px;
-                position: relative;
-                top: 75px;
-                left: 15%;
-                font: bold 20px Arial;
-max-width:80%;
-            }
-            #buttons1 a {
-            text-decoration: none;
-            color: black;
-            background-color: white;
-            border-radius: 20px 20px 20px 20px;
-            padding: 15px 107px 15px 107px;
-            position: absolute;
-            top: 140px;
-            left: 65%;
-            font: bold 20px Arial;
-
-        }
-            #buttons1 a {
-                text-decoration: none;
-                color: black;
-                background-color: white;
-                border-radius: 20px 20px 20px 20px;
-                padding: 15px 107px 15px 107px;
-                position: relative;
-                top: 100px;
-                left: 15%;
-                font: bold 20px Arial;
-max-width: 80%;
-
+       
+      
+            .pequeno{
+           position: absolute;
+           left:100px;
+           top:250px;
+           margin: 100px;
+           width:200px;
+           
+       }
+       .pequeno1{
+           position: absolute;
+           left:100px;
+           top:200px;
+           margin: 100px;
+           width:200px;
+           
+       }
+       
             }
 
             .vetorial {
@@ -207,7 +181,7 @@ max-width: 80%;
                 width: 500px;
                 height: 350px;
                 top: 300px;
-                left: -20%;
+                left: -100px;
             }
             
         .box {
@@ -226,39 +200,37 @@ max-width: 80%;
 
 
         }
-        #mybuttons{
-            display:inline;
-        }
-        }
-       
+        
+      
+
     </style>
 </head>
 
 <body>
-
-    <div class="menu">
-        <ul><strong>
-                <center>
-                    <li><a href="http://google.com">STORE</a></li>
-                    <li><a href="http://">BLOG</a></li>
-                    <li><a href="http://">CONTACT</a></li>
-                    <li><a href="http://">ABOUT US</a></li>
-                </center>
-            </strong>
-        </ul>
-    </div>
+<h3><strong>
+   <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Store</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Blog</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Contact</a>
+  </li>
+</ul></h3></strong>
     <p class="text">Toda nossa loja ao seu alcance.</p>
     <div class="vetorial">
         <img src="img/vetorial22.png" alt="homem estendendo a mão como cumprimento">
     </div>
     <br>
     <div id="mybuttons">
-    <div id="buttons">
-        <a href="http://">Entrar</a>
+    <div type="button" class="btn btn-light pequeno1">
+        <strong><a href="http://">Entrar</a></strong>
     </div>
     <br>
-    <div id="buttons1">
-        <a href="http://">Registrar-se</a>
+    <div type="button"  class="btn btn-light pequeno">
+       <strong> <a href="http://">Registrar-se</a> </strong>
         
     </div><br></div>
     <div class="box"><img src="img/facebooklogo.png" alt=""></div>
